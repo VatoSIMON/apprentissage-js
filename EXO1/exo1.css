@@ -1,0 +1,116 @@
+body{
+  font-family:  Roboto;
+  padding-bottom: 1000px;
+}
+
+.header{
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section{
+  background-color: rgb(212, 175, 175);
+  display: flex;
+}
+
+.logo-left{
+  width: 47px;
+}
+ 
+.middle-section{
+  display: flex;
+  background-color: aqua;
+margin-left: 70px;
+margin-right: 40px;
+max-width: 500px;
+flex: 1;
+align-items: center;
+}
+
+.search-bar{
+  flex: 1;
+  height:36px ;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(152, 151, 151);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 5px rgba(71, 70, 70, 0.15);
+}
+
+.search-bar::placeholder{
+  font-family: Roboto,Arial;
+  font-size: 16px;
+}
+
+.search-icon{
+  width: 20px;
+  padding:5px 5px;
+  
+}
+
+.search-voice{
+width: 20px;
+padding:5px 5px;
+border-radius: 5px;
+background-color: rgb(2, 40, 40);
+}
+
+.notification{
+  width: 25px;
+}
+
+.visa-card{
+width: 33px;
+}
+
+.all-tableau{
+ display: grid; 
+  grid-template-columns: 300px 300px 300px;
+ gap: 4rem ;
+ justify-content: center;
+}
+
+
+.jolie-tableau{
+width: 340px;
+}
+
+
+
+.auteur{
+  color: rgb(88, 87, 87);
+  font-size: 12px;
+}
+
+.commande{
+  padding: 5px 5px 5px 5px ;
+  justify-content: center;
+  border-radius: 18px;
+  background-color: rgb(53, 1, 1);
+  color:white ;
+  border: none;
+  margin-bottom: 5px;
+  
+}
+
+.status{
+display: flex;
+
+}
+
+.titre{
+  width: 300px;
+  margin-top: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.photo2{
+  width: 50px;
+  height:50px;
+  border-radius: 40px;
+}
+
+  
+
