@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50%;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  margin: 5px 0;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+#confirmation {
+  text-align: center;
+  background-color: #e0ffe0;
+  padding: 20px;
+  border: 1px solid #4CAF50;
+  border-radius: 10px;
+}
+document.getElementById("orderForm").addEventListener("submit", function(event) {
+  event.preventDefault();  // Empêcher l'envoi du formulaire pour traitement
+  
+  const firstName = document.getElementById("firstName").value;
+  const lastName = document.getElementById("lastName").value;
+  const email = document.getElementById("email").value;
+  const tableau = document.getElementById("tableau").value;
+  const cardNumber = document.getElementById("cardNumber").value;
+  const expiryDate = document.getElementById("expiryDate").value;
+  const cvv = document.getElementById("cvv").value;
+
+  // Afficher un message de confirmation (remplacer ceci par un envoi réel)
+  console.log("Commande reçue : ", firstName, lastName, email, tableau, cardNumber, expiryDate, cvv);
+
+  // Simuler une confirmation de commande
+  document.getElementById("orderForm").reset();  // Réinitialiser le formulaire
+  document.getElementById("confirmation").classList.remove("hidden");  // Afficher confirmation
+});
